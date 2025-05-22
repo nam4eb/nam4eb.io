@@ -132,11 +132,16 @@ svg {
 
   .container {
     flex-direction: column;
-    padding: 30px 20px;
+    padding: 0 30px 20px 30px;
     gap: 50px;
   }
 
+  .avatar-section {
+    margin: 0 30px;
+  }
+
   .avatar {
+    margin-top: 20px;
     width: 180px;
     height: 180px;
   }
