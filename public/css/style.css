@@ -26,6 +26,13 @@ body {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s ease forwards;
+  transition: all 0.4s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  transform: translateY(-5px);
+  transition: all 0.4s ease-in-out;
 }
 
 @keyframes fadeInUp {
@@ -107,6 +114,11 @@ body {
   transition: 0.3s ease-in-out;
 }
 
+.social-item:active {
+  transform: scale(0.96);
+  opacity: 0.9;
+}
+
 .social-item:hover svg {
   fill: #ffffff;
   transition: fill 0.3s ease;
@@ -172,5 +184,31 @@ svg {
   svg {
     width: 30px;
     height: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .avatar {
+    width: 140px;
+    height: 140px;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  .description {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .social-item {
+    font-size: 18px;
+    gap: 10px;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
   }
 }
